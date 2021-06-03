@@ -1,0 +1,72 @@
+body{
+    background: url('img/IMG_9876.JPG');
+    background-size: contain;
+    font-family: Montserrat;
+}
+#game{
+    width: 700px;
+    height: 300px;
+    box-shadow: 0 0 1em gray;
+    background: url('img/gameback.png');
+    background-size: contain;
+    position: relative;
+    left: 25%;
+    top: 3em;
+}
+#animal{
+    width: 80px;
+    height: 120px;
+    position: relative;
+    top: 200px;
+}
+.jump{
+    animation: jump 750ms;
+}
+@keyframes jump{
+    0%{top: 200px;}
+    25%{top: 60px;}
+    50%{top: 75px;}
+    100%{top: 200px;}
+}
+#block{
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: 105px;
+    left: 660px;
+}
+.run{
+    animation: block 3s infinite linear;
+}
+@keyframes block{
+    0%{left: 640px;}
+    100%{left: 0px;}
+}
+button{
+    position: relative;
+    left: 47%;
+    top: 5em;
+    padding: .3em 1em;
+    font-size: 20px;
+    background: url('img/IMG_9876.JPG');
+    background-size: cover;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+button:hover{
+    box-shadow: 0 0 .3em gray;
+}
+#result{
+    margin-left: 25%;
+    margin-top: 20px;
+    font-weight: 500;
+    border: 1px solid gray;
+    width: 10em;
+    padding: .5em;
+    background-color: rgba(255, 205, 185, 0.733);
+}
+#result:hover{
+    background-color: rgba(255, 205, 185, 0.945);
+}
